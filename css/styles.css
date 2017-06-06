@@ -1,0 +1,87 @@
+
+/*black, white, 3 other colors rqd.*/
+
+body {
+	font-family:"Marcellus";
+
+}
+
+header.mainheader {
+background: #FFF url('../images/aqueduct.jpg') no-repeat;
+background-position: center;
+background-size: cover;
+width:100%;
+height:350px;
+
+}
+
+header.mainheader h1{
+	color:white;
+	text-align: center;
+	background-color: #222525;
+	opacity: .6;
+	font-size: 2em;
+}
+
+nav {
+	
+	width:100%;
+	background-color: #222525;
+	opacity:.9;
+}
+
+header.mainheader nav ul{
+
+display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	
+}
+
+header.mainheader nav ul li{
+	list-style: none;
+	color:#FFF;
+
+
+}
+
+
+div.imgGreta{
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+div.imgGreta img{
+	border-radius: 80%;
+	width:200px;
+	height:auto;
+	border:2px solid black;
+
+}
+
+#bio, #blog,#resources, #projects, footer { 
+
+	height:auto;
+	clear:both;
+}
+
+
+
+@media (min-width: 450px){
+
+header.mainheader nav ul{
+display:flex;
+flex-direction: row;
+
+}
+
+}
+
+@media (min-width:835px;){
+
+
+}
