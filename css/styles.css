@@ -3,7 +3,7 @@
 
 body {
 	font-family:"Marcellus";
-
+	line-height: 1.5em;
 }
 
 header.mainheader {
@@ -12,7 +12,6 @@ background-position: center;
 background-size: cover;
 width:100%;
 height:350px;
-
 }
 
 header.mainheader h1{
@@ -20,39 +19,41 @@ header.mainheader h1{
 	text-align: center;
 	background-color: #222525;
 	opacity: .6;
+	height:50px;
 	font-size: 2em;
 }
 
 nav {
-	
 	width:100%;
 	background-color: #222525;
 	opacity:.9;
 }
 
 header.mainheader nav ul{
-
-display:flex;
+	display:flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-content: center;
-	
 }
 
 header.mainheader nav ul li{
 	list-style: none;
-	color:#FFF;
-
-
 }
 
+header.mainheader nav ul li a{
+	color:white;
+	text-decoration: none;
+}
+
+header.mainheader nav ul li a:hover{
+	color:#eb5937;
+}
 
 div.imgGreta{
 	width:100%;
 	display:flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 div.imgGreta img{
@@ -60,15 +61,46 @@ div.imgGreta img{
 	width:200px;
 	height:auto;
 	border:2px solid black;
-
 }
 
-#bio, #blog,#resources, #projects, footer { 
+div.biowrapper h2{
+color:#333C2B;
+text-align: center;
+font-weight: bold;
+font-size: 2em;
+font-family: "Marcellus SC";
+}
 
+div.biowrapper h3, 
+div.biowrapper h4{
+	line-height: .50em;
+	font-family: "Marcellus SC"
+}
+
+div.biowrapper h3{
+	padding-top: 10px;
+}
+
+.mainfooter { 
+	text-align: center;
 	height:auto;
 	clear:both;
+	padding-top: 30px;
+	margin-top:20px;
+	border-top: 3px groove #222525;
 }
 
+.mainfooter img {
+	height:30px;
+	width:auto;
+	padding-right:20px;
+	padding-left: 20px;
+	opacity:.6;
+}
+
+.mainfooter img:hover {
+	opacity:1;
+}
 
 
 @media (min-width: 450px){
