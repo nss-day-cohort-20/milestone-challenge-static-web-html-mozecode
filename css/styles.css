@@ -25,10 +25,10 @@ header.mainheader {
 header.mainheader h1{
 	color:white;
 	text-align: center;
-	background-color: #222525;
+	background-color: #333C2b;
 	opacity: .6;
 	height:50px;
-	font-size: 2em;
+	font-size: 1.5em;
 	padding-top:10px;
 }
 
@@ -48,6 +48,7 @@ header.mainheader nav ul{
 
 header.mainheader nav ul li{
 	list-style: none;
+	text-align: center;
 }
 
 header.mainheader nav ul li a,
@@ -74,7 +75,7 @@ div.imgGreta{
 
 div.imgGreta img{
 	border-radius: 80%;
-	width:200px;
+	width:50%;
 	height:auto;
 	border:2px solid black;
 }
@@ -102,9 +103,11 @@ div.biowrapper h2{
 }
 
 div.biowrapper h3, 
-div.biowrapper h4{
+div.biowrapper h4, 
+{
 
 	font-family: "Marcellus SC";
+	
 }
 
 div.biowrapper h3{
@@ -113,8 +116,9 @@ div.biowrapper h3{
 }
 
 div.biowrapper h4, 
-div.biowrapper <time> {
+div.biowrapper time {
 	padding-bottom: 10px;
+
 }
 
 div.biowrapper ul {
@@ -128,25 +132,23 @@ section#resources{
 	flex-direction: column;
 	width:100%;
 	justify-content: center;
-}
-
-section#resources{
 	background-color: #456F74;
 }
+
 section#resources h2{
 	align-self: center;
-	padding-top: 50px;
+	padding-top: 40px;
+	padding-bottom: 20px
 
 }
 
 
 div.resourceleft ul,
 div.resourceright ul{
-	display:flex;
-	flex-direction: row;
+	
 	list-style: none;
-	justify-content: space-around;
-	padding-top:30px;
+	text-align: center;
+	padding-top:10px;
 	padding-bottom: 30px;
 	
 }
@@ -161,7 +163,7 @@ div.resourceright ul{
 
 .blogpost{
 	display:flex;
-	width:50%;
+	width:100%;
 	margin: 0 auto;
 	flex-wrap: wrap;
 	padding:2%;
@@ -204,7 +206,7 @@ footer.blogfooter{
 }
 
 .mainfooter img {
-	height:30px;
+	height:45px;
 	width:auto;
 	padding-right:20px;
 	padding-left: 20px;
@@ -219,11 +221,35 @@ footer.blogfooter{
 
 @media (min-width: 450px){
 
+
+header.mainheader h1{	
+	background-color: #222525;
+	font-size: 2em;
+}
+
 header.mainheader nav ul{
 	display:flex;
 	flex-direction: row;
-
 }
+
+div.imgGreta img{
+	width:200px;
+}
+
+
+div.resourceleft ul,
+div.resourceright ul{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top:30px;
+	
+}
+
+.blogpost{
+	width:50%;
+}
+
 
 }
 
