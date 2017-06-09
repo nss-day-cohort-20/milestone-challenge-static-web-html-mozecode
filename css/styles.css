@@ -5,7 +5,6 @@
 * {
 	margin:0;
 	padding: 0;
-
 }
 
 body {
@@ -102,12 +101,9 @@ div.biowrapper h2{
 	padding-top: 50px;
 }
 
-div.biowrapper h3, 
-div.biowrapper h4, 
-{
-
+div.biowrapper h3,
+div.biowrapper h4 {
 	font-family: "Marcellus SC";
-	
 }
 
 div.biowrapper h3{
@@ -115,7 +111,7 @@ div.biowrapper h3{
 
 }
 
-div.biowrapper h4, 
+div.biowrapper h4,
 div.biowrapper time {
 	padding-bottom: 10px;
 
@@ -145,12 +141,10 @@ section#resources h2{
 
 div.resourceleft ul,
 div.resourceright ul{
-	
 	list-style: none;
 	text-align: center;
 	padding-top:10px;
 	padding-bottom: 30px;
-	
 }
 
 
@@ -195,7 +189,7 @@ footer.blogfooter{
 	text-align: center;
 }
 
-.mainfooter { 
+.mainfooter {
 	text-align: center;
 	height:auto;
 	clear:both;
@@ -222,7 +216,7 @@ footer.blogfooter{
 @media (min-width: 450px){
 
 
-header.mainheader h1{	
+header.mainheader h1{
 	background-color: #222525;
 	font-size: 2em;
 }
@@ -243,7 +237,6 @@ div.resourceright ul{
 	flex-direction: row;
 	justify-content: space-around;
 	padding-top:30px;
-	
 }
 
 .blogpost{
