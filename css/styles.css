@@ -1,0 +1,248 @@
+
+/*black, white, 3 other colors rqd.*/
+
+/*Universal Styles*/
+* {
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family:"Marcellus";
+	line-height: 1.5em;
+}
+
+/*Main Header, Nav, Link styles*/
+header.mainheader {
+	background: #FFF url('../images/aqueduct.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	height:350px;
+}
+
+header.mainheader h1{
+	color:white;
+	text-align: center;
+	background-color: #333C2b;
+	opacity: .6;
+	height:50px;
+	font-size: 1.5em;
+	padding-top:10px;
+}
+
+nav {
+	width:100%;
+	background-color: #222525;
+	opacity:.9;
+	margin-top: 10px;
+}
+
+header.mainheader nav ul{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+}
+
+header.mainheader nav ul li{
+	list-style: none;
+	text-align: center;
+}
+
+header.mainheader nav ul li a,
+div.resourceleft ul li a,
+div.resourceright ul li a{
+	color:white;
+	text-decoration: none;
+}
+
+header.mainheader nav ul li a:hover,
+div.resourceleft ul li a:hover,
+div.resourceright ul li a:hover{
+	color:#eb5937;
+}
+
+/*Greta Image*/
+div.imgGreta{
+	width:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+div.imgGreta img{
+	border-radius: 80%;
+	width:50%;
+	height:auto;
+	border:2px solid black;
+}
+
+
+/*Container*/
+div.container {
+	width:80%;
+	margin:0 auto;
+}
+
+/*Bio styles*/
+
+#bio{
+	padding-bottom: 50px;
+	border-bottom: 3px solid #333C2b
+}
+div.biowrapper h2{
+	color:#333C2B;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	font-family: "Marcellus SC";
+	padding-top: 50px;
+}
+
+div.biowrapper h3,
+div.biowrapper h4 {
+	font-family: "Marcellus SC";
+}
+
+div.biowrapper h3{
+	padding-top: 30px;
+
+}
+
+div.biowrapper h4,
+div.biowrapper time {
+	padding-bottom: 10px;
+
+}
+
+div.biowrapper ul {
+	padding-top: 20px;
+}
+
+/*Resource Link Styles*/
+
+section#resources{
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	justify-content: center;
+	background-color: #456F74;
+}
+
+section#resources h2{
+	align-self: center;
+	padding-top: 40px;
+	padding-bottom: 20px
+
+}
+
+
+div.resourceleft ul,
+div.resourceright ul{
+	list-style: none;
+	text-align: center;
+	padding-top:10px;
+	padding-bottom: 30px;
+}
+
+
+/*Blog styles */
+.blogcontainer h2{
+	text-align: center;
+	border-top:3px solid #333C2b;
+	padding-top: 50px;
+}
+
+.blogpost{
+	display:flex;
+	width:100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	padding:2%;
+	border:1px solid #333C2b;
+	font-family:"Nixie One";
+	font-weight: bolder;
+}
+
+header.blogheader{
+	width:100%;
+	text-align: center;
+}
+
+header.blogheader h2{
+	font-weight: bold;
+	padding-top:30px;
+	padding-bottom:20px;
+}
+
+.blogcopy p {
+	text-align: justify;
+	padding-bottom: 20px;
+}
+
+/*Footer styles*/
+footer.blogfooter{
+	font-size: .80em;
+	width:100%;
+	text-align: center;
+}
+
+.mainfooter {
+	text-align: center;
+	height:auto;
+	clear:both;
+	padding-top: 30px;
+	margin-top:20px;
+	border-top: 3px groove #222525;
+
+}
+
+.mainfooter img {
+	height:45px;
+	width:auto;
+	padding-right:20px;
+	padding-left: 20px;
+	opacity:.6;
+}
+
+.mainfooter img:hover {
+	opacity:1;
+}
+
+/*Media Queries*/
+
+@media (min-width: 450px){
+
+
+header.mainheader h1{
+	background-color: #222525;
+	font-size: 2em;
+}
+
+header.mainheader nav ul{
+	display:flex;
+	flex-direction: row;
+}
+
+div.imgGreta img{
+	width:200px;
+}
+
+
+div.resourceleft ul,
+div.resourceright ul{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top:30px;
+}
+
+.blogpost{
+	width:50%;
+}
+
+
+}
+
